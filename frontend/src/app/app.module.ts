@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { MDBBootstrapModule } from 'angular-bootstrap-md';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -32,6 +33,7 @@ import { MainComponent } from './home/main/main.component';
 import { TopComponent } from './ranking/top/top.component';
 import { ContactoComponent } from './contacto/contacto/contacto.component';
 import { FooterComponent } from './home/footer/footer.component';
+import { TopVentaComponent } from './ranking/top-venta/top-venta.component';
 
 @NgModule({
   declarations: [
@@ -49,7 +51,8 @@ import { FooterComponent } from './home/footer/footer.component';
     MainComponent,
     TopComponent,
     ContactoComponent,
-    FooterComponent
+    FooterComponent,
+    TopVentaComponent
   ],
   imports: [
     BrowserModule,
@@ -61,7 +64,8 @@ import { FooterComponent } from './home/footer/footer.component';
     MatSortModule,
     MatDialogModule,
     MatSnackBarModule,
-    FontAwesomeModule
+    FontAwesomeModule,
+    MDBBootstrapModule.forRoot()
   ],
   providers: [SongService, ArtistService],
   bootstrap: [AppComponent],

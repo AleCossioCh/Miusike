@@ -71,8 +71,12 @@ export class SongService {
     return this.http.put(this.SongUrl + 'artista/' + ArtistId + '/canciones/' + song.id + '/venta' , song);
   }
 
-  getAllSongs():Observable<Song[]>{
-    return this.http.get<Song[]>(this.SongUrl + 'artista/allcanciones' );
+  getAllSongsByVote(votacion:number):Observable<Song[]>{
+    return this.http.get<Song[]>(this.SongUrl + 'artista/allcanciones/' + votacion );
+  }
+
+  getAllSongsByBuy(venta:number):Observable<Song[]>{
+    return this.http.get<Song[]>(this.SongUrl + 'artista/allcanciones/' + venta);
   }
   
  

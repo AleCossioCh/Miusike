@@ -1,0 +1,50 @@
+
+<table id="tableSortExample" class="table table-striped table-bordered table-sm" cellspacing="0" width="100%">
+    <thead>
+      <tr>
+        <th class="th-sm">Id
+        </th>
+        <th class="th-sm">Nombre
+        </th>
+        <th class="th-sm">Duracion
+        </th>
+        <th class="th-sm">Genero
+        </th>
+        <th class="th-sm">Votos
+        </th>
+        <th class="th-sm">Compras
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      
+
+        <tr *ngFor="let cancion of listaCanciones" >
+           
+            <td>{{cancion.id}}</td>
+            <td>{{cancion.nombre}} </td>
+            <td>{{cancion.duracio}} minutos</td>
+            <td>{{cancion.genero}} </td>
+            <td>{{cancion.votacion}} </td>
+            <td>{{cancion.ventas}} </td>
+        </tr>
+
+      
+    </tbody>
+    <tfoot>
+      <tr>
+        <th>Id
+        </th>
+        <th>Nombre
+        </th>
+        <th>Duracion
+        </th>
+        <th>Genero
+        </th>
+        <th>Votos
+        </th>
+        <th>Compras
+        </th>
+      </tr>
+    </tfoot>
+  </table>

@@ -5,13 +5,14 @@ import { ShowArtComponent} from './artist/show-art/show-art.component'
 import {MainComponent} from './home/main/main.component'
 import {TopComponent} from './ranking/top/top.component'
 import {ContactoComponent} from './contacto/contacto/contacto.component'
-
+import {TopVentaComponent} from './ranking/top-venta/top-venta.component'
 
 const routes: Routes = [ 
   { path: 'artistas/:artistaId', component: SeeAllArtComponent},
   { path: 'artistas', component: ShowArtComponent},
   { path: '', component: MainComponent},
-  { path: 'ranking', component: TopComponent},
+  { path: 'rankingVotos', component: TopComponent},
+  { path: 'rankingVentas', component: TopVentaComponent},
   { path: 'contacto', component: ContactoComponent}
  ];
 

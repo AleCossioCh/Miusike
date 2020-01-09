@@ -1,0 +1,17 @@
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Pruebita.deps.json
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Pruebita.runtimeconfig.json
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Pruebita.runtimeconfig.dev.json
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Pruebita.dll
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\Pruebita.pdb
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\ProyectoMiusike.dll
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\bin\Debug\netcoreapp2.2\ProyectoMiusike.pdb
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.csprojAssemblyReference.cache
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.csproj.CoreCompileInputs.cache
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.AssemblyInfoInputs.cache
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.AssemblyInfo.cs
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.csproj.CopyComplete
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.dll
+C:\Users\default.LAPTOP-PEHQVPE3\Downloads\ProyectoMiusike\Pruebita\obj\Debug\netcoreapp2.2\Pruebita.pdb

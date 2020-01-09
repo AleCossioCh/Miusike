@@ -11,12 +11,14 @@ import { SongService } from 'src/app/services/song.service';
 export class TopComponent implements OnInit {
   listaCanciones: Song[]=[];
   headElements = ['Id', 'Nombre', 'Duracion', 'Genero', 'Votos', 'Compras'];
+  
   constructor(private songService:SongService, private route: ActivatedRoute) { }
 
   ngOnInit() {
-    this.songService.getAllSongs().subscribe(t => {
+    this.songService.getAllSongsByVote(1).subscribe(t => {
       this.listaCanciones = t;
     }); 
+    
     
      
   }
