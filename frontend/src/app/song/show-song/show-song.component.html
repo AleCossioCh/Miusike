@@ -1,0 +1,54 @@
+<mat-form-field>
+        <input matInput (keyup) = "applyFilter($event.target.value)"
+        placeholder="Filter">
+</mat-form-field>
+<div style="overflow:auto;">
+    <div class="mat-elevation-z8">
+        <mat-table [dataSource] = "listData" matSort>
+            <mat-header-row *matHeaderRowDef = "displayedColumns">
+            </mat-header-row>
+            <mat-row *matRowDef="let row; columns:displayedColumns;"></mat-row>
+                
+            <ng-container matColumnDef="id">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> idSong</mat-header-cell>
+                <mat-header-cell *matCellDef="let element"> {{element.id}}</mat-header-cell>
+            </ng-container>
+    
+            <ng-container matColumnDef="nombre">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> NameSong</mat-header-cell>
+                    <mat-header-cell *matCellDef="let element"> {{element.nombre}}</mat-header-cell>
+            </ng-container>
+            
+            <ng-container matColumnDef="artistaId">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> Artist</mat-header-cell>
+                <mat-header-cell *matCellDef="let element"> {{element.artistaId}}</mat-header-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="duracio">
+                <mat-header-cell *matHeaderCellDef mat-sort-header> DurationSong</mat-header-cell>
+                <mat-header-cell *matCellDef="let element"> {{element.duracio}}</mat-header-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="genero">
+                <mat-header-cell *matHeaderCellDef mat-sort-header>GenreSong</mat-header-cell>
+                <mat-header-cell *matCellDef="let element"> {{element.genero}}</mat-header-cell>
+            </ng-container>
+
+            <ng-container matColumnDef="Options">
+                <mat-header-cell *matHeaderCellDef>Options</mat-header-cell>
+                <mat-cell *matCellDef="let row">
+                    <button mat-icon-button (click)="onEdit(row)">
+                        <mat-icon>update</mat-icon>
+                    </button>
+                    <button mat-icon-button color= "warn" (click)="onDelete(row.id)">
+                        <mat-icon>delete outline</mat-icon>
+                    </button>
+                </mat-cell>
+            </ng-container>
+    
+        </mat-table>
+    </div>
+</div>
+    
+    <button class="mt-2" mat-raised-button (click)="onAdd()" 
+    color="accent" > Add Song</button>

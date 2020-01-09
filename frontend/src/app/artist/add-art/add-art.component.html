@@ -1,0 +1,76 @@
+<div class="d-flex justify-content-between">
+    <h4>Add new Artist</h4>
+
+    <button mat-button (click) = "onClose()">
+        <mat-icon> close </mat-icon>
+    </button>
+</div>
+
+<div style="overflow: auto; height: 200px;">
+    <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+        <div class="mt-4 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Name </span>
+            </div>
+            <input required minlength="2" type ="text"
+             class="form-control"
+              name="nombre"
+               #nombre="ngModel"
+               [(ngModel)]= "service.formData.nombre">
+        </div>
+
+        <div class="text-left text-danger"
+        *ngIf="nombre.invalid && nombre.touched">
+            Please enter Artist name.
+        </div>
+        
+        <div class="mt-4 input-group">
+                <div class="input-group-prepend">
+                    <span class="input-group-text">Age </span>
+                </div>
+                <input required minlength="1" type ="text"
+                 class="form-control"
+                  name="edad"
+                   #edad="ngModel"
+                   [(ngModel)]= "service.formData.edad">
+        </div>
+
+        <div class="mt-4 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Biography </span>
+            </div>
+            <input required minlength="2" type ="text"
+             class="form-control"
+              name="biografia"
+               #biografia="ngModel"
+               [(ngModel)]= "service.formData.biografia">
+        </div>
+    
+        <div class="text-left text-danger"
+        *ngIf="edad.invalid && edad.touched">
+            Please enter Artist Age.
+        </div>
+        
+        <div class="mt-4 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Image Url </span>
+            </div>
+            <input required  type ="text"
+             class="form-control"
+              name="imgPath"
+               #imgPath="ngModel"
+               [(ngModel)]= "service.formData.imgPath">
+        </div>
+
+
+        <!-- <div class="mt-4">
+            <app-upload ></app-upload>
+        </div> -->
+
+        <button class="mx-0" mat-raised-button
+         color="accent"
+        type="submit"
+        [disabled]="form.invalid">Add Artist</button>
+    </form>
+
+</div>

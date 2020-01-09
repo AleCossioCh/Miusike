@@ -1,0 +1,102 @@
+
+/* -------footer------- */
+
+.card-footer {
+    margin-top: 30px;
+    padding-top: 35px;
+    padding-bottom: 15px;
+    background-color: #222;
+    color: gray;
+    border-top: 0;
+  }
+  
+  .card-footer div.row {
+    margin-bottom: 15px;
+  }
+  
+  #hours,
+  #address {
+    line-height: 1.5;
+  }
+  
+  #hours>span,
+  #address>span {
+    font-size: 1.3em;
+  }
+  
+  #hours p {
+    color: #d3b300;
+    font-size: .8em;
+    line-height: 1.8;
+  }
+  
+  hr {
+    border-color: gray;
+  }
+  
+  
+  /**End Footer**/
+  
+  
+  /*ICONS*/
+  
+  
+  /* Style all font awesome icons */
+  
+  .fa {
+    text-decoration: none;
+    float: right;
+    padding: 10px;
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+  }
+  
+  
+  /* Add a hover effect if you want */
+  
+  .fa:hover {
+    opacity: 0.7;
+  }
+  
+  
+  /* Set a specific color for each brand */
+  
+  
+  /* Facebook */
+  
+  .fa-facebook {
+    background: #3B5998;
+    color: white;
+  }
+  
+  
+  /* Twitter */
+  
+  .fa-twitter {
+    background: #55ACEE;
+    color: white;
+  }
+
+  .fa-youtube {
+    background: rgb(247, 6, 6);
+    color: white;
+  }
+
+  .fa-instagram {
+    background: rgb(173, 9, 105);
+    color: rgb(255, 196, 4);
+  }
+
+  .fa-snapchat-ghost {
+    background: rgb(255, 251, 1);
+    color: rgb(255, 255, 255);
+  }
+
+  .fa-whatsapp {
+    background: rgb(1, 255, 14);
+    color: rgb(255, 255, 255);
+  }
+  
+  
+  /*END OF ICONS*/

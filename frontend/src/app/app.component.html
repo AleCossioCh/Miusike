@@ -1,0 +1,82 @@
+<body>
+  <header>
+   <nav id="header-nav" class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+       <div>
+            <a href="index.html" class="float-left d-none d-lg-block">
+              <div id="logo-img">
+                <img src="../assets/img/music1.jpg" alt=" Best Artists "> 
+              </div>
+            </a>
+
+            <div class="navbar-brand">
+              <a href="index.html"><h1>Music App</h1></a>
+                <p>
+                  <img src="../assets/img/logo.jpg" alt=" Best Artists ">  
+                  <span> Best Artists</span>
+                </p>
+            </div>
+
+
+            <button style= "background: #f77904;" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+        </div>
+             
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul id="nav-list" class="navbar-nav ml-auto">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">
+                        <fa-icon [icon]="faCoffee" class="fa-3x"></fa-icon> <br> Home </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" a
+                    label = "ArtScreen"
+                    (click) = "ArtScreen = true;"href="/artistas">
+                        <fa-icon [icon]="faHeadphones" class="fa-3x"></fa-icon> <br> Artists</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="/ranking">
+
+                        <fa-icon [icon]="faTrophy" class="fa-3x" ></fa-icon> <br> Ranking</a>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="/contacto">
+
+                        <fa-icon [icon]="faAddressCard" class="fa-3x" ></fa-icon> <br> Contact</a>
+                  </li>
+
+                  <li id="phone" class="d-none d-lg-block">
+                      <a href="tel:591-4525650">
+                        <span>591-4525650</span></a><div> * Call  us</div>
+                    </li>
+                </ul>
+              </div>
+      </div>
+
+    </nav>
+     
+  </header>
+
+  <div id="call-btn" class="d-block d-sm-none d-none d-sm-block d-md-none ">
+      <a class="btn" href="tel:591-4525650">
+          <fa-icon [icon]="faPhone" ></fa-icon>
+      591-4525650
+      </a>
+    </div>
+    <div id="xs-deliver" class="text-center d-block d-sm-none d-none d-sm-block d-md-none">* Call us</div>
+
+
+
+    <router-outlet></router-outlet>
+    <!-- <app-artist *ngIf="ArtScreen"></app-artist> -->
+
+    <app-footer></app-footer>
+
+    
+  
+</body>
+
+

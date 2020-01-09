@@ -1,0 +1,67 @@
+<div class="d-flex justify-content-between">
+    <h4>Add new Song</h4>
+
+    <button mat-button (click) = "onClose()">
+        <mat-icon> close </mat-icon>
+    </button>
+</div>
+
+<div style="overflow: auto; height: 200px;">
+    <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+        <div class="mt-3 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Name </span>
+            </div>
+            <input required minlength="2" type ="text"
+             class="form-control"
+              name="nombre"
+               #nombre="ngModel"
+               [(ngModel)]= "service.formData.nombre">
+        </div>
+
+        <div class="mt-3 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Duration </span>
+            </div>
+            <input required minlength="2" type ="text"
+             class="form-control"
+              name="duracio"
+               #duracio="ngModel"
+               [(ngModel)]= "service.formData.duracio">
+        </div>
+
+        <div class="mt-3 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">GenreSong </span>
+            </div>
+            <input required minlength="2" type ="text"
+             class="form-control"
+              name="genero"
+               #genero="ngModel"
+               [(ngModel)]= "service.formData.genero">
+        </div>
+
+        <div class="mt-3 input-group">
+            <div class="input-group-prepend">
+                <span class="input-group-text">Artist </span>
+            </div>
+            <input required type ="text"
+             class="form-control"
+              name="artistaId"
+               #artistaId="ngModel"
+               [(ngModel)]= "service.formData.artistaId">
+            
+        </div>
+
+
+        <button class="mt-4" mat-raised-button
+         color="accent"
+        type="submit">
+        Add Song</button>
+
+        
+    </form>
+
+
+   
+</div>
