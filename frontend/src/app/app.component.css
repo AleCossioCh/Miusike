@@ -7,24 +7,24 @@ body {
   
   /** HEADER **/
   #header-nav {
-    background-color: #000000;
+    background-color: #222125;
     border-radius: 0;
     border: 0;
   }
   
-  #logo-img img {
-    
-    
+  #logo-img {
+    background: url('../images/images.jpg') no-repeat;
     width: 150px;
     height: 150px;
     margin: 10px 15px 10px 0;
   }
 
-  
-  .navbar-brand img { 
+  img { 
+    width: 350px;
+    height: 500px;
+    margin: 20px 10px 50px 30px;
     
-    height: 30px;
-    margin: auto;
+   
   }
   
   .navbar-brand {
@@ -33,7 +33,7 @@ body {
   
   .navbar-brand h1 { /* Restaurant name */
     font-family: 'Lora', serif;
-    color: #ff460e;
+    color: #f73d04;
     font-size: 1.5em;
     text-transform: uppercase;
     font-weight: bold;
@@ -71,13 +71,13 @@ body {
   }
   
   #phone {
-    margin-top: 10px;
+    margin-top: 5px;
   }
   #phone a { /* Phone number */
     text-align: right;
     padding-bottom: 0;
   }
-  #phone div { /* Call us */
+  #phone div { /* We Deliver */
     color: #f73d04;
     text-align: right;
     padding-right: 15px;
@@ -106,16 +106,17 @@ button.navbar-toggler {
     padding-top: 10px;
     height: 80px;
   }
-  .navbar-brand h1 { /* Artist name */
+  .navbar-brand h1 { /* Restaurant name */
     padding-top: 10px;
     font-size: 5vw; /* 1vw = 1% of viewport width */
   }
-  .navbar-brand p { /* BestArtist*/
+  .navbar-brand p { /* Kosher cert */
     font-size: .6em;
     margin-top: 12px;
   }
-  
-  
+  .navbar-brand p img { /* Star-K */
+    height: 20px;
+  }
 
   #navbarNav a { /* Collapsed nav menu text */
     font-size: 1.2em;
@@ -143,7 +144,4 @@ button.navbar-toggler {
   /* End Header */
 
 }
-
-
-
 

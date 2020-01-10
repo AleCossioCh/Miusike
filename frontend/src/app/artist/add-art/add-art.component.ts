@@ -9,13 +9,12 @@ import {MatSnackBar} from '@angular/material';
   templateUrl: './add-art.component.html',
   styleUrls: ['./add-art.component.css']
 })
-export class AddArtComponent implements OnInit {
 
+export class AddArtComponent implements OnInit {
   constructor(public dialogbox: MatDialogRef<AddArtComponent>,
     private service:ArtistService, private snackBar: MatSnackBar){
-
+      
   }
-
   ngOnInit() {
     this.resetForm();
   }
@@ -28,8 +27,8 @@ export class AddArtComponent implements OnInit {
         id: 0,
         nombre: "",
         edad:0,
-        biografia: "",
-        imgPath: ""
+        imgPath: "pug.jpeg",
+        biografia: ""
     }
   }
 
@@ -52,4 +51,5 @@ export class AddArtComponent implements OnInit {
         });
       })
   }
+
 }

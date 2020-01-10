@@ -35,7 +35,7 @@ export class EditSongComponent implements OnInit {
   }
 
   onSubmit(form:NgForm){
-    this.service.updateSong(form.value,  this.service.formData.artistaId).subscribe(res=>{
+    this.service.updateSong(form.value).subscribe(res=>{
       this.snackBar.open(res.toString(), '',{
         duration:5000,
         verticalPosition:'top'

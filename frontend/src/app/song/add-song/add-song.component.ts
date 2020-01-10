@@ -11,7 +11,6 @@ import {MatSnackBar} from '@angular/material';
 })
 export class AddSongComponent implements OnInit {
 
-
   constructor(public dialogbox: MatDialogRef<AddSongComponent>,
     private service:SongService, private snackBar: MatSnackBar)
   { }
@@ -42,9 +41,7 @@ export class AddSongComponent implements OnInit {
         nombre: "",
         duracio:0,
         genero:"",
-        artistaId:0, 
-        votacion:0,
-        ventas:0
+        artistaId:0
     }
   }
 
@@ -57,7 +54,7 @@ export class AddSongComponent implements OnInit {
     //ITS SHOWING ON CONSOLE
     console.log(form.value);
     //WITH THE BACKEND RUNNING USE THIS: 
-    this.service.addSong(form.value, this.service.formData.artistaId ).subscribe(res=>
+    this.service.addSong(form.value).subscribe(res=>
     {
       this.resetForm(form);
       //the snack bar is to show a message that the song was created succesfully

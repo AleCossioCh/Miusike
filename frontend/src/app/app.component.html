@@ -4,16 +4,14 @@
       <div class="container">
        <div>
             <a href="index.html" class="float-left d-none d-lg-block">
-              <div id="logo-img">
-                <img src="../assets/img/music1.jpg" alt=" Best Artists "> 
-              </div>
+              <div id="logo-img"></div>
             </a>
 
             <div class="navbar-brand">
               <a href="index.html"><h1>Music App</h1></a>
                 <p>
-                  <img src="../assets/img/logo.jpg" alt=" Best Artists ">  
-                  <span> Best Artists</span>
+                  <!-- <img src="../images/loguito.png" alt="Best Artists">  -->
+                  <span>Best Artists</span>
                 </p>
             </div>
 
@@ -33,40 +31,31 @@
                   <li class="nav-item">
                     <a class="nav-link" a
                     label = "ArtScreen"
-                    (click) = "ArtScreen = true;"href="/artistas">
+                    (click) = "ArtScreen = true;"href="#">
                         <fa-icon [icon]="faHeadphones" class="fa-3x"></fa-icon> <br> Artists</a>
                   </li>
                   <li class="nav-item">
-                    <a class="nav-link" href="/rankingVotos">
-
-                        <fa-icon [icon]="faTrophy" class="fa-3x" ></fa-icon> <br> Ranking</a>
-                  </li>
-                  
-                  <li class="nav-item">
-                    <a class="nav-link" href="/rankingVentas">
-
-                        <fa-icon [icon]="faAward" class="fa-3x" ></fa-icon> <br> Top Venta</a>
-                  </li>
-
-                  <li class="nav-item">
-                    <a class="nav-link" href="/contacto">
+                    <a class="nav-link" href="#">
 
                         <fa-icon [icon]="faAddressCard" class="fa-3x" ></fa-icon> <br> Contact</a>
                   </li>
-
                   <li id="phone" class="d-none d-lg-block">
                       <a href="tel:591-4525650">
                         <span>591-4525650</span></a><div> * Call  us</div>
                     </li>
                 </ul>
               </div>
+
+            
+        
+
       </div>
 
     </nav>
      
   </header>
 
-  <div id="call-btn" class="d-block d-sm-none d-none d-sm-block d-md-none ">
+  <div id="call-btn" class="d-block d-sm-none d-none d-sm-block d-md-none">
       <a class="btn" href="tel:591-4525650">
           <fa-icon [icon]="faPhone" ></fa-icon>
       591-4525650
@@ -76,13 +65,5 @@
 
 
 
-    <router-outlet></router-outlet>
-    <!-- <app-artist *ngIf="ArtScreen"></app-artist> -->
-
-    <app-footer></app-footer>
-
-    
-  
+    <app-artist *ngIf="ArtScreen"></app-artist>
 </body>
-
-

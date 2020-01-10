@@ -8,10 +8,6 @@ import {MatDialog, MatDialogConfig} from '@angular/material'
 import {AddArtComponent} from 'src/app/artist/add-art/add-art.component'
 import {MatSnackBar} from '@angular/material';
 import {EditArtComponent} from 'src/app/artist/edit-art/edit-art.component'
-import {SeeAllArtComponent} from 'src/app/artist/see-all-art/see-all-art.component'
-
-import { Router } from '@angular/router';
-
 @Component({
   selector: 'app-show-art',
   templateUrl: './show-art.component.html',
@@ -20,7 +16,7 @@ import { Router } from '@angular/router';
 export class ShowArtComponent implements OnInit {
 
   constructor(private service: ArtistService,
-    private dialog:MatDialog, private snackBar:MatSnackBar, private router:  Router) {
+    private dialog:MatDialog, private snackBar:MatSnackBar) {
       //this is to refresh after the create an artist
       this.service.listen().subscribe((m:any)=>{
         console.log(m);
@@ -77,11 +73,6 @@ export class ShowArtComponent implements OnInit {
     this.dialog.open(EditArtComponent, dialogConfig);
   }
 
-  onSeeMore(art: Artist){
-    this.router.navigateByUrl(`/artistas/${art.id}`);
-  }
-
-
   onDelete(id: number){
     //ITS SHOWING ON CONSOLE that gets the idArtist to delete
     console.log(id);
@@ -105,4 +96,5 @@ export class ShowArtComponent implements OnInit {
     dialogConfig.width = "70%";
     this.dialog.open(AddArtComponent, dialogConfig);
   }
+
 }

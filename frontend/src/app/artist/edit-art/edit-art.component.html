@@ -45,31 +45,10 @@
                        #edad="ngModel"
                        [(ngModel)]= "service.formData.edad">
             </div>
-                 <div class="text-left text-danger"
-                *ngIf="edad.invalid && edad.touched">
-                    Please enter Artist time.
-                </div>
-
-            <div class="mt-4 input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Biography </span>
-                </div>
-                <input type ="text"
-                 class="form-control"
-                  name="biografia"
-                   #biografia="ngModel"
-                   [(ngModel)]= "service.formData.biografia">
-            </div>
-            
-            <div class="mt-4 input-group">
-                <div class="input-group-prepend">
-                    <span class="input-group-text">Image Url </span>
-                </div>
-                <input type ="text"
-                 class="form-control"
-                  name="imgPath"
-                   #imgPath="ngModel"
-                   [(ngModel)]= "service.formData.imgPath">
+    
+            <div class="text-left text-danger"
+            *ngIf="edad.invalid && edad.touched">
+                Please enter Artist time.
             </div>
     
             <button class="mt-4" mat-raised-button

@@ -4,7 +4,4 @@ export class Song {
     duracio: number;
     genero: string;
     artistaId: number;
-    votacion: number;
-    ventas: number;
-} 
-
+}

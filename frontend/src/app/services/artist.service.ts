@@ -15,7 +15,7 @@ export class ArtistService {
    
    formData: Artist;
 
-  readonly APIurl = "http://localhost:5000/api";
+  readonly APIurl = "http://localhost:58242/api";
   getArtistList(): Observable<Artist[]> {
     return this.http.get<Artist[]>(this.APIurl + '/artista');
   }
@@ -38,10 +38,5 @@ export class ArtistService {
   }
   filter(filterBy: string){
     this.listeners.next(filterBy);
-  }
-
-
-  getArtist(id:string):Observable<Artist> {
-    return this.http.get<Artist>(this.APIurl + '/artista/' +id);
   }
 }

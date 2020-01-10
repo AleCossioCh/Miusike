@@ -8,6 +8,7 @@
 
 <div style="overflow: auto; height: 200px;">
     <form #form="ngForm" (submit)="onSubmit(form)" autocomplete="off">
+        
         <div class="mt-3 input-group">
             <div class="input-group-prepend">
                 <span class="input-group-text">Id </span>
@@ -56,13 +57,15 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">Artist </span>
             </div>
-            <input disabled type ="text"
+            <select required type ="text"
              class="form-control"
               name="artistaId"
                #artistaId="ngModel"
                [(ngModel)]= "service.formData.artistaId">
-                
-            
+                <option *ngFor="let dl of listItems" [value]="dl">
+                    {{dl}}
+                </option>
+            </select>
         </div>
 
         <button class="mt-4" mat-raised-button

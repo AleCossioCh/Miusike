@@ -45,23 +45,22 @@
             <div class="input-group-prepend">
                 <span class="input-group-text">Artist </span>
             </div>
-            <input required type ="text"
+            <select required type ="text"
              class="form-control"
               name="artistaId"
                #artistaId="ngModel"
                [(ngModel)]= "service.formData.artistaId">
-            
+                <option *ngFor="let dl of listItems" [value]="dl">
+                    {{dl}}
+                </option>
+            </select>
         </div>
-
 
         <button class="mt-4" mat-raised-button
          color="accent"
         type="submit">
         Add Song</button>
 
-        
     </form>
 
-
-   
 </div>

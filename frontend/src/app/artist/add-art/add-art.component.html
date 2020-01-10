@@ -26,7 +26,7 @@
         
         <div class="mt-4 input-group">
                 <div class="input-group-prepend">
-                    <span class="input-group-text">Age </span>
+                    <span class="input-group-text">Time </span>
                 </div>
                 <input required minlength="1" type ="text"
                  class="form-control"
@@ -35,37 +35,30 @@
                    [(ngModel)]= "service.formData.edad">
         </div>
 
+        <div class="text-left text-danger"
+        *ngIf="edad.invalid && edad.touched">
+            Please enter Artist time.
+        </div>
+
         <div class="mt-4 input-group">
             <div class="input-group-prepend">
                 <span class="input-group-text">Biography </span>
             </div>
-            <input required minlength="2" type ="text"
+            <input required minlength="1" type ="text"
              class="form-control"
               name="biografia"
                #biografia="ngModel"
                [(ngModel)]= "service.formData.biografia">
         </div>
-    
-        <div class="text-left text-danger"
-        *ngIf="edad.invalid && edad.touched">
-            Please enter Artist Age.
-        </div>
         
-        <div class="mt-4 input-group">
-            <div class="input-group-prepend">
-                <span class="input-group-text">Image Url </span>
-            </div>
-            <input required  type ="text"
-             class="form-control"
-              name="imgPath"
-               #imgPath="ngModel"
-               [(ngModel)]= "service.formData.imgPath">
+        <div class="text-left text-danger"
+        *ngIf="biografia.invalid && biografia.touched">
+            Please enter a short biography.
         </div>
 
-
-        <!-- <div class="mt-4">
-            <app-upload ></app-upload>
-        </div> -->
+        <div class="mt-4">
+            <app-upload> </app-upload>
+        </div>
 
         <button class="mx-0" mat-raised-button
          color="accent"
